@@ -42,7 +42,10 @@ export default {
 	 ** https://github.com/nuxt-community/vuetify-module
 	 */
 	vuetify: {
-		customVariables: ['~/assets/styles/variables.scss'],
+		customVariables: [
+			'~/assets/styles/variables.scss',
+			'~/assets/styles/mixins.scss'
+		],
 		defaultAssets: false,
 		optionsPath: '~/plugins/vuetify.options.js'
 	},
@@ -53,6 +56,7 @@ export default {
 		/*
 		 ** You can extend webpack config here
 		 */
-		extend(config, ctx) {}
+		// eslint-disable-next-line prettier/prettier
+		extend(config, ctx) { }
 	}
 }
