@@ -76,9 +76,15 @@ export default {
 .image-sect {
 	margin-top: -23rem;
 	position: relative;
+	@include xs {
+		display: none;
+	}
 	.img-cont {
 		width: 60%;
 		position: absolute;
+		@include sm {
+			right: 0rem;
+		}
 		right: -10rem;
 		top: 10rem;
 		img {

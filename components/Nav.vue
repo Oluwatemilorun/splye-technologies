@@ -126,5 +126,17 @@ export default {
 		margin-bottom: 2rem;
 		text-transform: uppercase;
 	}
+
+	.sidenav-link {
+		padding: 0.5rem 0;
+		a {
+			text-decoration: none;
+			text-transform: capitalize;
+			color: #434175;
+			&:hover {
+				color: hsla(242, 29%, 36%, 0.479) !important;
+			}
+		}
+	}
 }
 </style>
