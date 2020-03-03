@@ -3,25 +3,29 @@
 		<v-toolbar class="nav-toolbar" flat>
 			<v-container>
 				<div class="navbar">
-					<v-toolbar-title>splye</v-toolbar-title>
+					<v-toolbar-title>
+						<nuxt-link to="/">
+							splye
+						</nuxt-link>
+					</v-toolbar-title>
 					<div class="navbar-nav hidden-sm-and-down">
 						<li class="nav-item">
-							<nuxt-link to="/" class="nav-link">
+							<nuxt-link to="our-story" class="nav-link">
 								our story
 							</nuxt-link>
 						</li>
 						<li class="nav-item">
-							<nuxt-link to="/our-services" class="nav-link">
+							<nuxt-link to="our-services" class="nav-link">
 								our services
 							</nuxt-link>
 						</li>
 						<li class="nav-item">
-							<nuxt-link to="/portfolio" class="nav-link">
+							<nuxt-link to="portfolio" class="nav-link">
 								portfolio
 							</nuxt-link>
 						</li>
 						<li class="nav-item">
-							<nuxt-link to="/contact" class="nav-link">
+							<nuxt-link to="contact" class="nav-link">
 								contact us
 							</nuxt-link>
 						</li>
@@ -48,22 +52,22 @@
 			</div>
 			<div class="sidenav-nav">
 				<li class="sidenav-link">
-					<nuxt-link to="#">
+					<nuxt-link to="our-story">
 						our story
 					</nuxt-link>
 				</li>
 				<li class="sidenav-link">
-					<nuxt-link to="#">
+					<nuxt-link to="our-services">
 						our services
 					</nuxt-link>
 				</li>
 				<li class="sidenav-link">
-					<nuxt-link to="#">
+					<nuxt-link to="portfolio">
 						portfolio
 					</nuxt-link>
 				</li>
 				<li class="sidenav-link">
-					<nuxt-link to="#">
+					<nuxt-link to="contact">
 						contact us
 					</nuxt-link>
 				</li>

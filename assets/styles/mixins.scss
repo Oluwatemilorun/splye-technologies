@@ -23,3 +23,20 @@
 		@content;
 	}
 }
+
+@mixin intro-outer-container {
+	padding: 0 1rem;
+	flex-direction: column;
+}
+
+@mixin intro-container {
+	width: 100%;
+	order: 2;
+	margin-top: 2rem;
+}
+
+@mixin image-sect {
+	order: 1;
+	right: 0rem;
+	position: unset;
+}

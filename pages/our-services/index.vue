@@ -17,11 +17,18 @@
 								md="4"
 							>
 								<div
-									class="services d-flex flex-column justify-center align-center text-center px-7 "
+									class="services d-flex flex-column justify-center align-center text-center px-7"
+									data-aos="flip-up"
+									data-aos-easing="ease-in-sine"
+									data-aos-duration="1000"
 								>
 									<img :src="data.img" :alt="data.title" />
-									<p class="text-text-uppercase">{{ data.title }}</p>
-									<p class="text-text-uppercase">{{ data.details }}</p>
+									<p class="text-text-uppercase">
+										{{ data.title }}
+									</p>
+									<p class="text-text-uppercase">
+										{{ data.details }}
+									</p>
 								</div>
 							</v-col>
 						</v-row>
@@ -29,12 +36,20 @@
 				</v-row>
 			</div>
 
-			<div class="my-12 justify-center align-center d-flex">
+			<div
+				class="my-12 justify-center align-center d-flex"
+				data-aos="zoom-in"
+				data-aos-duration="1000"
+			>
 				<v-btn outlined>Contact us</v-btn>
 			</div>
 		</v-container>
 
-		<Footer></Footer>
+		<Footer
+			data-aos="zoom-in-left"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out-sine"
+		></Footer>
 	</div>
 </template>
 
@@ -78,25 +93,12 @@ const services = [
 </script>
 
 <style lang="scss" scoped>
-.top-banner {
-	background-color: rgba(51, 51, 51, 0.226);
-	margin-top: -100px;
-	height: 350px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	.page-title {
-		color: #434175;
-		font-size: 2rem;
-	}
-}
-
-.services {
-	height: 300px;
-	img {
-		width: 20%;
+.services-sect {
+	.services {
+		height: 300px;
+		img {
+			width: 20%;
+		}
 	}
 }
 </style>

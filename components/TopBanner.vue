@@ -18,7 +18,7 @@ export default {}
 .top-banner {
 	background-color: rgba(51, 51, 51, 0.226);
 	margin-top: -100px;
-	height: 350px;
+	height: 300px;
 	width: 100%;
 	display: flex;
 	justify-content: center;

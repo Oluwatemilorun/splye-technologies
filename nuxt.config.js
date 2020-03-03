@@ -19,7 +19,7 @@ export default {
 	},
 	loading: { color: '#fff' },
 	css: [],
-	plugins: [],
+	plugins: [{ src: '@/plugins/aos', ssr: false }],
 	buildModules: [
 		// Doc: https://github.com/nuxt-community/eslint-module
 		'@nuxtjs/eslint-module',

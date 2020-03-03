@@ -4,7 +4,7 @@
 			<v-container>
 				<div class="footer-links">
 					<v-row>
-						<v-col cols="12" sm="2" md="4">
+						<v-col cols="12" sm="6" md="3" lg="4">
 							<div class="d-flex justify-center flex-column ">
 								<p class="text-uppercase footer-text-link">
 									about us
@@ -14,7 +14,7 @@
 								</nuxt-link>
 							</div>
 						</v-col>
-						<v-col cols="12" sm="2" md="4">
+						<v-col cols="12" sm="6" md="3" lg="4">
 							<div class="d-flex justify-center flex-column ">
 								<p class="text-uppercase footer-text-link">
 									services
@@ -30,7 +30,7 @@
 								</nuxt-link>
 							</div>
 						</v-col>
-						<v-col cols="12" sm="2" md="4">
+						<v-col cols="12" sm="6" md="3" lg="4">
 							<div class="d-flex justify-center flex-column ">
 								<p class="text-uppercase footer-text-link">
 									contact us
@@ -40,7 +40,7 @@
 								</nuxt-link>
 							</div>
 						</v-col>
-						<v-col cols="12" sm="2" md="4">
+						<v-col cols="12" sm="6" md="3" lg="4">
 							<div class="d-flex justify-center flex-column ">
 								<p class="text-uppercase footer-text-link">
 									OUR WORK
@@ -77,8 +77,15 @@ export default {
 
 	.footer-links {
 		width: 60%;
-		margin: 2rem auto;
-		// text-align: left;
+		@include sm {
+			width: 80%;
+			margin: 2rem 0 2rem 20%;
+		}
+		@include xs {
+			width: 100%;
+			margin: 2rem;
+		}
+		margin: 2rem 0 2rem 25%;
 		.footer-text-link {
 			color: #ffffff;
 			font-weight: bold;

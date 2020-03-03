@@ -17,7 +17,12 @@
 								md="4"
 								lg="3"
 							>
-								<div class="profile-card">
+								<div
+									class="profile-card"
+									data-aos="fade-left"
+									data-aos-easing="ease-in-sine"
+									data-aos-duration="1000"
+								>
 									<img :src="data.img" :alt="data.name" />
 									<v-overlay :absolute="absolute" :value="true">
 										<p>{{ data.name }}</p>
@@ -31,12 +36,23 @@
 				</v-row>
 			</div>
 
-			<div class="my-12 justify-center align-center d-flex">
-				<v-btn outlined>Contact us</v-btn>
+			<div
+				class="my-12 justify-center align-center d-flex"
+				data-aos="fade-right"
+				data-aos-easing="ease-in-sine"
+				data-aos-duration="1000"
+			>
+				<nuxt-link to="contact">
+					<v-btn outlined>Contact us</v-btn>
+				</nuxt-link>
 			</div>
 		</v-container>
 
-		<Footer></Footer>
+		<Footer
+			data-aos="fade-left"
+			data-aos-easing="ease-in-sine"
+			data-aos-duration="1000"
+		></Footer>
 	</div>
 </template>
 
@@ -110,6 +126,7 @@ const profiles = [
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition: display all 2000ms;
 		img {
 			width: 20%;
 		}
@@ -117,7 +134,7 @@ const profiles = [
 			display: none;
 			text-align: center;
 			text-transform: capitalize;
-			transition: ease-in-out 200ms;
+			transition: display all 2000ms;
 			p {
 				&:first-child {
 					text-transform: uppercase;
