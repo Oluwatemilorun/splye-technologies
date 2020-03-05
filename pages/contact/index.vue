@@ -15,31 +15,19 @@
 						data-aos-duration="1000"
 					>
 						<div class="message-area">
-							<p class="area-title">send your container</p>
+							<p class="area-title">
+								send your container
+							</p>
 							<div class="form-container">
 								<v-form>
-									<v-text-field
-										label="Name"
-										outlined
-										required
-									></v-text-field>
-									<v-text-field
-										label="Email"
-										outlined
-										required
-									></v-text-field>
-									<v-text-field
-										label="Subject"
-										outlined
-										required
-									></v-text-field>
-									<v-textarea
-										label="Message"
-										outlined
-										required
-									></v-textarea>
+									<v-text-field label="Name" outlined required />
+									<v-text-field label="Email" outlined required />
+									<v-text-field label="Subject" outlined required />
+									<v-textarea label="Message" outlined required />
 									<div class="text-center">
-										<v-btn dark color="#6C63FF">send</v-btn>
+										<v-btn dark color="#6C63FF">
+											send
+										</v-btn>
 									</div>
 								</v-form>
 							</div>
@@ -53,7 +41,9 @@
 						data-aos-duration="1000"
 					>
 						<div class="contact-area px-11">
-							<p class="area-title">contact</p>
+							<p class="area-title">
+								contact
+							</p>
 							<div class="contact-container">
 								<p>
 									<v-icon> mdi-message </v-icon>
@@ -74,11 +64,7 @@
 			</div>
 		</v-container>
 
-		<Footer
-			data-aos="zoom-in-left"
-			data-aos-duration="500"
-			data-aos-easing="ease-in-out-sine"
-		></Footer>
+		<Footer />
 	</div>
 </template>
 

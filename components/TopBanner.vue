@@ -17,7 +17,7 @@ export default {}
 <style lang="scss" scoped>
 .top-banner {
 	background-color: rgba(51, 51, 51, 0.226);
-	margin-top: -100px;
+	margin-top: -65px;
 	height: 300px;
 	width: 100%;
 	display: flex;

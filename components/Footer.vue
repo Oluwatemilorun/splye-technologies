@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="footer">
+		<v-footer class="footer" height="auto">
 			<v-container>
 				<div class="footer-links">
 					<v-row>
@@ -52,14 +52,14 @@
 						</v-col>
 					</v-row>
 				</div>
-				<div class="white-line"></div>
+				<div class="white-line" />
 				<div class="copyright">
 					<p class="text-uppercase">
 						COPYRIGHT 2020 SPLYE TECHNOLOGIES DESIGN
 					</p>
 				</div>
 			</v-container>
-		</div>
+		</v-footer>
 	</div>
 </template>
 
@@ -71,21 +71,19 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-	min-height: 400px;
-	width: 100%;
 	background-color: rgb(46, 46, 46);
 
 	.footer-links {
 		width: 60%;
 		@include sm {
 			width: 80%;
-			margin: 2rem 0 2rem 20%;
+			margin: 1rem 0 1rem 20%;
 		}
 		@include xs {
 			width: 100%;
 			margin: 2rem;
 		}
-		margin: 2rem 0 2rem 25%;
+		margin: 1rem 0 1rem 25%;
 		.footer-text-link {
 			color: #ffffff;
 			font-weight: bold;
@@ -106,7 +104,7 @@ export default {
 	}
 
 	.copyright {
-		margin: 4rem 0;
+		margin-top: 1rem;
 		text-align: center;
 		p {
 			color: #ffffff;

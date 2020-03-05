@@ -41,15 +41,13 @@
 				data-aos="zoom-in"
 				data-aos-duration="1000"
 			>
-				<v-btn outlined>Contact us</v-btn>
+				<v-btn outlined to="/contact">
+					Contact us
+				</v-btn>
 			</div>
 		</v-container>
 
-		<Footer
-			data-aos="zoom-in-left"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out-sine"
-		></Footer>
+		<Footer />
 	</div>
 </template>
 

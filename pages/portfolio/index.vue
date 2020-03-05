@@ -27,7 +27,9 @@
 									<v-overlay :absolute="absolute" :value="true">
 										<p>{{ data.name }}</p>
 										<p>{{ data.type }}</p>
-										<v-btn outlined>View</v-btn>
+										<v-btn outlined>
+											View
+										</v-btn>
 									</v-overlay>
 								</div>
 							</v-col>
@@ -40,19 +42,17 @@
 				class="my-12 justify-center align-center d-flex"
 				data-aos="fade-right"
 				data-aos-easing="ease-in-sine"
-				data-aos-duration="1000"
+				data-aos-duration="500"
 			>
 				<nuxt-link to="contact">
-					<v-btn outlined>Contact us</v-btn>
+					<v-btn outlined to="/contact">
+						Contact us
+					</v-btn>
 				</nuxt-link>
 			</div>
 		</v-container>
 
-		<Footer
-			data-aos="fade-left"
-			data-aos-easing="ease-in-sine"
-			data-aos-duration="1000"
-		></Footer>
+		<Footer />
 	</div>
 </template>
 

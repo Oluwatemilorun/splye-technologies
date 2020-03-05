@@ -62,11 +62,7 @@
 			</div>
 		</v-container>
 
-		<Footer
-			data-aos="zoom-in-left"
-			data-aos-duration="500"
-			data-aos-easing="ease-in-out-sine"
-		></Footer>
+		<Footer />
 	</div>
 </template>
 

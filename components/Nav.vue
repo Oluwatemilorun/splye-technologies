@@ -1,43 +1,27 @@
 <template>
 	<div>
-		<v-toolbar class="nav-toolbar" flat>
-			<v-container>
-				<div class="navbar">
-					<v-toolbar-title>
-						<nuxt-link to="/">
-							splye
-						</nuxt-link>
-					</v-toolbar-title>
-					<div class="navbar-nav hidden-sm-and-down">
-						<li class="nav-item">
-							<nuxt-link to="our-story" class="nav-link">
-								our story
-							</nuxt-link>
-						</li>
-						<li class="nav-item">
-							<nuxt-link to="our-services" class="nav-link">
-								our services
-							</nuxt-link>
-						</li>
-						<li class="nav-item">
-							<nuxt-link to="portfolio" class="nav-link">
-								portfolio
-							</nuxt-link>
-						</li>
-						<li class="nav-item">
-							<nuxt-link to="contact" class="nav-link">
-								contact us
-							</nuxt-link>
-						</li>
-					</div>
-					<v-app-bar-nav-icon
-						@click.stop="drawer = !drawer"
-						class="hidden-md-and-up nav-toggler"
-					>
-					</v-app-bar-nav-icon>
-				</div>
-			</v-container>
-		</v-toolbar>
+		<v-app-bar app flat color="transparent" class="container" fixed>
+			<v-toolbar-title>
+				<nuxt-link to="/">splye</nuxt-link>
+			</v-toolbar-title>
+			<v-spacer />
+			<v-btn text class="hidden-sm-and-down" to="/our-story">
+				our story
+			</v-btn>
+			<v-btn text class="hidden-sm-and-down" to="/our-services">
+				our services
+			</v-btn>
+			<v-btn text class="hidden-sm-and-down" to="/portfolio">
+				portfolio
+			</v-btn>
+			<v-btn text class="hidden-sm-and-down" to="/contact">
+				contact us
+			</v-btn>
+			<v-app-bar-nav-icon
+				class="hidden-md-and-up nav-toggler"
+				@click.stop="drawer = !drawer"
+			/>
+		</v-app-bar>
 
 		<v-navigation-drawer
 			id="drawer"
@@ -47,31 +31,59 @@
 			width="300"
 			class="sidenav"
 		>
-			<div class="site-logo">
-				sply tech
-			</div>
-			<div class="sidenav-nav">
-				<li class="sidenav-link">
-					<nuxt-link to="our-story">
-						our story
-					</nuxt-link>
-				</li>
-				<li class="sidenav-link">
-					<nuxt-link to="our-services">
-						our services
-					</nuxt-link>
-				</li>
-				<li class="sidenav-link">
-					<nuxt-link to="portfolio">
-						portfolio
-					</nuxt-link>
-				</li>
-				<li class="sidenav-link">
-					<nuxt-link to="contact">
-						contact us
-					</nuxt-link>
-				</li>
-			</div>
+			<v-list>
+				<v-list-item>
+					<v-list-item-content>
+						<v-list-item-title>
+							<v-btn block text to="/" class="justify-start">
+								sply tech
+							</v-btn>
+						</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+				<v-list-item>
+					<v-list-item-content>
+						<v-list-item-title>
+							<v-btn
+								block
+								text
+								to="/our-story"
+								class="justify-start"
+								active-class=""
+							>
+								our story
+							</v-btn>
+						</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+				<v-list-item>
+					<v-list-item-content>
+						<v-list-item-title>
+							<v-btn block text to="/our-services" class="justify-start">
+								our services
+							</v-btn>
+						</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+				<v-list-item>
+					<v-list-item-content>
+						<v-list-item-title>
+							<v-btn block text to="/portfolio" class="justify-start">
+								portfolio
+							</v-btn>
+						</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+				<v-list-item>
+					<v-list-item-content>
+						<v-list-item-title>
+							<v-btn block text to="/contact" class="justify-start">
+								contact us
+							</v-btn>
+						</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+			</v-list>
 		</v-navigation-drawer>
 	</div>
 </template>
@@ -92,55 +104,21 @@ export default {
 	background: rgba(240, 240, 240, 1);
 }
 
-.nav-toolbar {
-	min-height: 100px;
-	background-color: transparent !important;
-	.navbar {
-		display: flex;
-		padding-top: 2rem;
-		align-items: center;
-		.navbar-nav {
-			display: flex;
-			margin-left: auto;
-		}
-
-		.nav-toggler {
-			margin-left: auto;
-		}
-
-		.nav-item {
-			list-style: none;
-			padding: 0.5rem;
-			&:not(:last-child) {
-				margin-right: 1rem;
-			}
-
-			.nav-link {
-				color: black;
-				text-transform: uppercase;
-				text-decoration: none;
-			}
-		}
+.v-toolbar__content {
+	padding: 0;
+	@include xs {
+		padding-right: 16px;
 	}
 }
 
-.sidenav {
-	padding: 2rem;
-	.site-logo {
-		margin-bottom: 2rem;
-		text-transform: uppercase;
+.v-btn {
+	transition: font-weight 500ms ease-in-out;
+	&::before {
+		background-color: transparent;
 	}
 
-	.sidenav-link {
-		padding: 0.5rem 0;
-		a {
-			text-decoration: none;
-			text-transform: capitalize;
-			color: #434175;
-			&:hover {
-				color: hsla(242, 29%, 36%, 0.479) !important;
-			}
-		}
+	&:hover {
+		color: #434175;
 	}
 }
 </style>

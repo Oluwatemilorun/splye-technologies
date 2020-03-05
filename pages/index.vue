@@ -17,12 +17,12 @@
 						deleniti laudantium officia!
 					</p>
 					<div class="action-button">
-						<nuxt-link to="portfolio">
-							<v-btn dark color="#6C63FF">portfolio</v-btn>
-						</nuxt-link>
-						<nuxt-link to="contact">
-							<v-btn dark color="#6C63FF" class="ml-3">contact us</v-btn>
-						</nuxt-link>
+						<v-btn dark color="primary" nuxt to="/portfolio">
+							portfolio
+						</v-btn>
+						<v-btn dark color="primary" class="ml-3" to="/contact">
+							contact us
+						</v-btn>
 					</div>
 				</div>
 				<div
@@ -54,10 +54,8 @@ export default {
 
 <style lang="scss" scoped>
 .intro-outer-container {
+	padding-top: 5rem;
 	position: relative;
-	@include sm {
-		padding: 0 1rem;
-	}
 	@include xs {
 		@include intro-outer-container;
 	}
@@ -92,9 +90,8 @@ export default {
 .image-sect {
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 5rem;
 	right: -30rem;
-	top: 0rem;
 	@include xs {
 		@include image-sect;
 	}
