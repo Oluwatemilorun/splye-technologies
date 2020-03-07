@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<Nav></Nav>
+		<Nav />
 		<v-content>
 			<nuxt />
 		</v-content>
@@ -19,8 +19,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
 * {
 	font-family: 'Raleway';
 }

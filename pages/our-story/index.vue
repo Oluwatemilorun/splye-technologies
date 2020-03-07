@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<top-banner></top-banner>
+		<top-banner />
 
 		<v-container>
 			<div
@@ -17,7 +17,9 @@
 					<div class="story-container">
 						<v-row class="border-bottom py-4">
 							<v-col cols="12" md="2">
-								<p class="text-text-uppercase">CHALLENGES</p>
+								<p class="text-uppercase">
+									CHALLENGES
+								</p>
 							</v-col>
 							<v-col cols="12" md="10">
 								<p>
@@ -31,7 +33,9 @@
 						</v-row>
 						<v-row class="border-bottom py-4">
 							<v-col cols="12" md="2">
-								<p class="text-text-uppercase">INSIGHT AND IDEAS</p>
+								<p class="text-uppercase">
+									INSIGHT AND IDEAS
+								</p>
 							</v-col>
 							<v-col cols="12" md="10">
 								<p>
@@ -45,7 +49,9 @@
 						</v-row>
 						<v-row class="border-bottom py-4">
 							<v-col cols="12" md="2">
-								<p class="text-text-uppercase">RESULT</p>
+								<p class="text-uppercase">
+									RESULT
+								</p>
 							</v-col>
 							<v-col cols="12" md="10">
 								<p>
@@ -55,6 +61,26 @@
 									taking into account the client’s tastes and pedigree
 									into account.
 								</p>
+							</v-col>
+						</v-row>
+						<v-row class=" py-4">
+							<v-col cols="12" md="2">
+								<p class="text-uppercase">
+									Photo
+								</p>
+							</v-col>
+							<v-col cols="12" md="10">
+								<v-row>
+									<v-col cols="12" md="4">
+										<v-img src="/img/eBook.png" />
+									</v-col>
+									<v-col cols="12" md="4">
+										<v-img src="/img/eBook.png" />
+									</v-col>
+									<v-col cols="12" md="4">
+										<v-img src="/img/eBook.png" />
+									</v-col>
+								</v-row>
 							</v-col>
 						</v-row>
 					</div>
