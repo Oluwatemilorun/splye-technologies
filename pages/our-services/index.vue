@@ -52,7 +52,8 @@
 </template>
 
 <script>
-import imgIcon from '@/static/icon.png'
+import socialMedialImg from '@/static/img/social-media.svg'
+import weblImg from '@/static/img/web-design.svg'
 import TopBanner from '@/components/TopBanner'
 import Footer from '@/components/Footer'
 
@@ -68,21 +69,21 @@ export default {
 const services = [
 	{
 		id: 1,
-		img: imgIcon,
+		img: socialMedialImg,
 		title: 'SOCIAL MEDIA',
 		details:
 			'Experts a social media content creation, page growth, daily management, tracking and analytics.'
 	},
 	{
 		id: 2,
-		img: imgIcon,
+		img: weblImg,
 		title: 'MOBILE APP',
 		details:
 			'We create fully functional and tested mobile applications, deployable on iOS and android'
 	},
 	{
 		id: 3,
-		img: imgIcon,
+		img: weblImg,
 		title: 'WEB DESIGN',
 		details:
 			'Our developers are skilled at producing aesthetically pleasing and SEO compliant websites.'

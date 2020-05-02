@@ -57,7 +57,10 @@
 </template>
 
 <script>
-import imgIcon from '@/static/icon.png'
+import nimcureImg from '@/static/img/nimcure.png'
+import redoxcorpImg from '@/static/img/redoxcorp.png'
+import ekoimg from '@/static/img/eko.png'
+import gogaImg from '@/static/img/goa.svg'
 import TopBanner from '@/components/TopBanner'
 import Footer from '@/components/Footer'
 
@@ -73,29 +76,29 @@ export default {
 const profiles = [
 	{
 		id: 1,
-		img: imgIcon,
+		img: nimcureImg,
 		name: 'nimcure',
 		type: 'software',
 		details: 'lorem'
 	},
 	{
 		id: 2,
-		img: imgIcon,
-		name: 'nimcure',
+		img: redoxcorpImg,
+		name: 'redoxcorp',
 		type: 'software',
 		details: 'lorem'
 	},
 	{
 		id: 3,
-		img: imgIcon,
-		name: 'nimcure',
+		img: ekoimg,
+		name: 'eko atlantic',
 		type: 'software',
 		details: 'lorem'
 	},
 	{
 		id: 4,
-		img: imgIcon,
-		name: 'nimcure',
+		img: gogaImg,
+		name: 'goga',
 		type: 'software',
 		details: 'lorem'
 	}
@@ -128,7 +131,7 @@ const profiles = [
 		justify-content: center;
 		transition: display all 2000ms;
 		img {
-			width: 20%;
+			width: 100px;
 		}
 		.v-overlay {
 			display: none;

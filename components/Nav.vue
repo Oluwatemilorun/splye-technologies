@@ -1,8 +1,10 @@
 <template>
 	<div>
-		<v-app-bar app flat color="transparent" class="container" fixed>
+		<v-app-bar app flat color="transparent" class="container app-bar">
 			<v-toolbar-title>
-				<nuxt-link to="/">splye</nuxt-link>
+				<nuxt-link to="/">
+					<img :src="logo" alt="" width="100px" srcset="" />
+				</nuxt-link>
 			</v-toolbar-title>
 			<v-spacer />
 			<v-btn text class="hidden-sm-and-down" to="/our-story">
@@ -89,17 +91,23 @@
 </template>
 
 <script>
+import logo from '@/static/img/logo.png'
 export default {
 	name: 'top-nav',
 	data() {
 		return {
-			drawer: null
+			drawer: null,
+			logo
 		}
 	}
 }
 </script>
 
 <style lang="scss">
+.v-app-bar.v-app-bar--fixed {
+	position: unset;
+}
+
 #drawer {
 	background: rgba(240, 240, 240, 1);
 }

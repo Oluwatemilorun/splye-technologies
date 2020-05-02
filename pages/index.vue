@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="index-page">
 		<v-container>
 			<div class="intro-outer-container d-flex ">
 				<div
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import img1 from '@/static/img1.svg'
+import img1 from '@/static/img/undraw_maker_launch_crhe.svg'
 
 export default {
 	name: 'home',
@@ -53,8 +53,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.index-page {
+	min-height: 100%;
+	background-image: url('/img/Vector-1.svg'), url('/img/Vector-2.svg'),
+		url('/img/Vector.svg'), url('/img/Vector.svg');
+	background-size: 30%, 15%, 30%, 20%;
+	background-position: left 0% bottom -40%, right 0% bottom -10%,
+		left -10% bottom -140%, right 0% bottom -60%;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
 .intro-outer-container {
-	padding-top: 5rem;
+	padding-top: 1rem;
 	position: relative;
 	@include xs {
 		@include intro-outer-container;
@@ -90,7 +99,7 @@ export default {
 .image-sect {
 	position: absolute;
 	right: 0;
-	top: 5rem;
+	top: 1rem;
 	right: -30rem;
 	@include xs {
 		@include image-sect;
@@ -99,7 +108,7 @@ export default {
 		@include image-sect;
 	}
 	img {
-		width: 75%;
+		width: 60%;
 		@include xs {
 			width: 100%;
 		}

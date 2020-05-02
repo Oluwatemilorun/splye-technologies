@@ -4,7 +4,7 @@
 			<p
 				class="page-title text-uppercase d-flex align-center justify-center font-weight-bold "
 			>
-				<slot></slot>
+				<slot />
 			</p>
 		</div>
 	</div>
@@ -16,8 +16,11 @@ export default {}
 
 <style lang="scss" scoped>
 .top-banner {
-	background-color: rgba(51, 51, 51, 0.226);
-	margin-top: -65px;
+	background-image: url('/img/banner.png');
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	// margin-top: -65px;
 	height: 300px;
 	width: 100%;
 	display: flex;

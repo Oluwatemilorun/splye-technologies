@@ -22,4 +22,7 @@ export default {
 * {
 	font-family: 'Raleway';
 }
+.v-content {
+	padding-top: 0 !important;
+}
 </style>
