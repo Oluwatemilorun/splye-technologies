@@ -15,11 +15,14 @@ export default {
 				content: process.env.npm_package_description || ''
 			}
 		],
-		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+		link: [
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{ rel: 'stylesheet', href: '/raleway.css' }
+		]
 	},
 	loading: { color: '#fff' },
 	css: [],
-	plugins: [],
+	plugins: [{ src: '@/plugins/aos', ssr: false }],
 	buildModules: [
 		// Doc: https://github.com/nuxt-community/eslint-module
 		'@nuxtjs/eslint-module',
@@ -42,7 +45,10 @@ export default {
 	 ** https://github.com/nuxt-community/vuetify-module
 	 */
 	vuetify: {
-		customVariables: ['~/assets/styles/variables.scss'],
+		customVariables: [
+			'~/assets/styles/variables.scss',
+			'~/assets/styles/mixins.scss'
+		],
 		defaultAssets: false,
 		optionsPath: '~/plugins/vuetify.options.js'
 	},
@@ -53,6 +59,7 @@ export default {
 		/*
 		 ** You can extend webpack config here
 		 */
-		extend(config, ctx) {}
+		// eslint-disable-next-line prettier/prettier
+		extend(config, ctx) { }
 	}
 }
