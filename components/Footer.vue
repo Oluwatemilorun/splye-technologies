@@ -1,66 +1,64 @@
 <template>
-	<div>
-		<v-footer class="footer" height="auto">
-			<v-container>
-				<div class="footer-links">
-					<v-row>
-						<v-col cols="12" sm="6" md="3" lg="4">
-							<div class="d-flex justify-center flex-column ">
-								<p class="text-uppercase footer-text-link">
-									about us
-								</p>
-								<nuxt-link to="#" class="footer-link">
-									who are we
-								</nuxt-link>
-							</div>
-						</v-col>
-						<v-col cols="12" sm="6" md="3" lg="4">
-							<div class="d-flex justify-center flex-column ">
-								<p class="text-uppercase footer-text-link">
-									services
-								</p>
-								<nuxt-link to="#" class="footer-link">
-									SOCIAL MEDIA
-								</nuxt-link>
-								<nuxt-link to="#" class="footer-link">
-									WEB DESIGN
-								</nuxt-link>
-								<nuxt-link to="#" class="footer-link">
-									MOBILE APP
-								</nuxt-link>
-							</div>
-						</v-col>
-						<v-col cols="12" sm="6" md="3" lg="4">
-							<div class="d-flex justify-center flex-column ">
-								<p class="text-uppercase footer-text-link">
-									contact us
-								</p>
-								<nuxt-link to="#" class="footer-link">
-									GET IN TOUCH
-								</nuxt-link>
-							</div>
-						</v-col>
-						<v-col cols="12" sm="6" md="3" lg="4">
-							<div class="d-flex justify-center flex-column ">
-								<p class="text-uppercase footer-text-link">
-									OUR WORK
-								</p>
-								<nuxt-link to="#" class="footer-link">
-									PORTFOLIO
-								</nuxt-link>
-							</div>
-						</v-col>
-					</v-row>
-				</div>
-				<div class="white-line" />
-				<div class="copyright">
-					<p class="text-uppercase">
-						COPYRIGHT 2020 SPLYE TECHNOLOGIES DESIGN
-					</p>
-				</div>
-			</v-container>
-		</v-footer>
-	</div>
+	<v-footer class="footer" height="auto">
+		<v-container>
+			<div class="footer-links">
+				<v-row>
+					<v-col cols="12" sm="6" md="3" lg="4">
+						<div class="d-flex justify-center flex-column ">
+							<p class="text-uppercase footer-text-link">
+								about us
+							</p>
+							<nuxt-link to="#" class="footer-link">
+								who are we
+							</nuxt-link>
+						</div>
+					</v-col>
+					<v-col cols="12" sm="6" md="3" lg="4">
+						<div class="d-flex justify-center flex-column ">
+							<p class="text-uppercase footer-text-link">
+								services
+							</p>
+							<nuxt-link to="#" class="footer-link">
+								SOCIAL MEDIA
+							</nuxt-link>
+							<nuxt-link to="#" class="footer-link">
+								WEB DESIGN
+							</nuxt-link>
+							<nuxt-link to="#" class="footer-link">
+								MOBILE APP
+							</nuxt-link>
+						</div>
+					</v-col>
+					<v-col cols="12" sm="6" md="3" lg="4">
+						<div class="d-flex justify-center flex-column ">
+							<p class="text-uppercase footer-text-link">
+								contact us
+							</p>
+							<nuxt-link to="#" class="footer-link">
+								GET IN TOUCH
+							</nuxt-link>
+						</div>
+					</v-col>
+					<v-col cols="12" sm="6" md="3" lg="4">
+						<div class="d-flex justify-center flex-column ">
+							<p class="text-uppercase footer-text-link">
+								OUR WORK
+							</p>
+							<nuxt-link to="#" class="footer-link">
+								PORTFOLIO
+							</nuxt-link>
+						</div>
+					</v-col>
+				</v-row>
+			</div>
+			<div class="white-line" />
+			<div class="copyright">
+				<p class="text-uppercase">
+					COPYRIGHT 2020 SPLYE TECHNOLOGIES DESIGN
+				</p>
+			</div>
+		</v-container>
+	</v-footer>
 </template>
 
 <script>
