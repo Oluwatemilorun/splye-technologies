@@ -63,17 +63,13 @@
 				</v-row>
 			</div>
 		</v-container>
-
-		<Footer />
 	</div>
 </template>
 
 <script>
-import TopBanner from '@/components/TopBanner'
-import Footer from '@/components/Footer'
 
 export default {
-	components: { Footer, 'top-banner': TopBanner }
+	layout: 'secondary'
 }
 </script>
 

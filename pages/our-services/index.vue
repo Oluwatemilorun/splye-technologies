@@ -46,19 +46,16 @@
 				</v-btn>
 			</div>
 		</v-container>
-
-		<Footer />
 	</div>
 </template>
 
 <script>
 import socialMedialImg from '@/static/img/social-media.svg'
 import weblImg from '@/static/img/web-design.svg'
-import TopBanner from '@/components/TopBanner'
-import Footer from '@/components/Footer'
+
 
 export default {
-	components: { Footer, 'top-banner': TopBanner },
+	layout: 'secondary',
 	data: () => ({
 		absolute: true,
 		overlay: true,

@@ -51,8 +51,6 @@
 				</nuxt-link>
 			</div>
 		</v-container>
-
-		<Footer />
 	</div>
 </template>
 
@@ -61,11 +59,9 @@ import nimcureImg from '@/static/img/nimcure.png'
 import redoxcorpImg from '@/static/img/redoxcorp.png'
 import ekoimg from '@/static/img/eko.png'
 import gogaImg from '@/static/img/goa.svg'
-import TopBanner from '@/components/TopBanner'
-import Footer from '@/components/Footer'
 
 export default {
-	components: { Footer, 'top-banner': TopBanner },
+	layout: 'secondary',
 	data: () => ({
 		absolute: true,
 		overlay: true,
