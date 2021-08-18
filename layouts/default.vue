@@ -1,28 +1,17 @@
 <template>
 	<v-app>
 		<Nav />
-		<v-content>
+		<v-main>
 			<nuxt />
-		</v-content>
+		</v-main>
 	</v-app>
 </template>
 
 <script>
-import Nav from '@/components/Nav'
 
 export default {
-	components: { Nav },
 	data() {
 		return {}
 	}
 }
 </script>
-
-<style>
-* {
-	font-family: 'Raleway';
-}
-.v-content {
-	padding-top: 0 !important;
-}
-</style>
