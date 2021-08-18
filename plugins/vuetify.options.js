@@ -6,10 +6,10 @@ const theme = {
 	dark: false,
 	themes: {
 		light: {
-			primary: colors.indigo.base,
-			secondary: colors.blueGrey.darken2,
+			primary: '#6C63FF',
+			secondary: '#413F72',
 			tertiary: colors.lightGreen.darken2,
-			accent: colors.pink.accent2
+			accent: '#D13B1A'
 		}
 	}
 }
